@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    <div class="content">
+        
+        <div class="modalWindow none">
+            <div class="modalContent">
+                <button class="modalBtn">x</button>
+                <div class="changeModal">
+                    <button class="editModalBtn">edit</button>
+                    <button class="deleteModalBtn">delete</button>
+                </div>
+                <h2 class="modalTitle"></h2>
+                <p class="modalText"></p>
+
+                <div class="commentsBlock">
+                    <input type="text" class="commentsInput">
+                    <button class="addCommentBtn">add</button>
+                    <ul class="comments"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <button class="openCreateForm">createPost</button>
+
+
+            <div class="createPostFormWrapper">
+                <form id="createPostForm">
+                    <input type="text" id="titleInput" placeholder="Заголовок" required>
+                    <textarea id="contentInput" placeholder="Зміст" required></textarea>
+                    <button type="submit" class="createPostButton">Створити пост</button>
+                </form>
+            </div>
+            
+            <div class="postsContainer"></div>
+        </div>
+    </div>
+
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
